@@ -1,0 +1,469 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  background-color: #333;
+  color: black;
+}
+
+/* Global Button Styles */
+button {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Navbar Styles */
+.navSection {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-left: 180px;
+  background: black;
+  color: white;
+}
+
+.navSection .company {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0;
+}
+
+.navSection .firmName h4 {
+  margin: 0;
+}
+
+.navSection .userAuth button{
+  margin-left: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+/* Sidebar Styles */
+.sideBarSection {
+  width: 180px;
+  height: 100vh;
+  padding-top: 20px;
+  background: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.sideBarSection ul {
+  padding-left: 0;
+  margin-top: 150px;
+}
+
+.sideBarSection ul button {
+  list-style: none;
+  font-weight: 300;
+  width: 100px;
+  font-size: 1rem;
+  margin: 15px 10px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.sideBarSection ul li:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+/* Firm and Product Form Styles */
+.firmSection, .productSection {
+  margin-left: 240px;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  margin-right: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableForm, .productForm {
+  width: 100%;
+  max-width: 600px;
+  min-width:100px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tableForm h3, .productForm h3 {
+  margin-bottom: 20px;
+  color: black;
+}
+
+input[type="text"], input[type="file"], .productForm textarea {
+  width: 90%;
+  padding: 5px;
+  margin: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  margin-right: 10px;
+}
+
+.checkInp, .checksInp {
+  margin: 15px 0;
+}
+
+.inputsContainer, .inputsContainers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkboxContainer, .checkboxsContainers {
+  display: flex;
+  align-items: center;
+}
+
+/* Veg and Non-Veg Category Styles */
+.productCategory {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.productCategory label {
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+}
+
+.productCategory input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Submit Button */
+.btnSubmit {
+  display: flex;
+  justify-content: center;
+}
+
+.btnSubmit button {
+  width: 100%;
+  max-width: 200px;
+}
+
+/* Auth Section Styles */
+.authSection {
+  margin-left: 240px;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authForm {
+  width: 50%;
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-left: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.authForm h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.authForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+}
+
+.authForm input[type="text"],
+.authForm input[type="email"],
+.authForm input[type="password"] {
+  width: 30%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.authForm input[type="text"]::placeholder,
+.authForm input[type="email"]::placeholder,
+.authForm input[type="password"]::placeholder {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.authForm .btnSubmit {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.authForm .btnSubmit button {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+}
+
+.tableForm h3, .productForm h3{
+  color: black;
+}
+
+.product-table {
+  width: 100%;
+  border: 2px solid white; /* Adds a solid black border around the table */
+  margin-right: 50px; /* Adds a 50px right margin */
+  border-collapse: collapse; /* Ensures borders are collapsed */
+  background: #fff; /* Sets background color to white */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.product-table thead tr th {
+  font-size: 1.4rem; /* Sets the font size for the table headers */
+  font-weight: bold; /* Makes the header text bold */
+  padding: 10px 15px; /* Adds padding for better spacing */
+  background-color: #007BFF; /* Background color for the header */
+  color: white; /* Text color for the header */
+  text-align: left; /* Aligns text to the left */
+  border-bottom: 2px solid white; /* Adds a solid black border under the headers */
+}
+
+.product-table tbody tr td {
+  padding: 10px 15px; /* Adds padding to table cells */
+  border-bottom: 1px solid #ddd; /* Adds a subtle border between rows */
+}
+
+.product-table tbody tr:hover {
+  background-color: #f1f1f1; /* Changes background on hover for rows */
+}
+
+
+/* Styles for devices with width between 500px and 768px */
+@media (min-width: 600px) and (max-width: 768px) {
+  .navSection {
+      height: 60px; /* Reduce height of navbar */
+      padding: 0 15px; /* Adjust padding */
+      font-size: 0.9rem; /* Reduce font size */
+      width: 80%;
+  }
+
+  .sideBarSection{
+    height: 120vh;
+  }
+
+  .navSection .company {
+      font-size: 0.7rem; /* Smaller font size for company name */
+  }
+
+  .navSection .userAuth button {
+      font-size: 0.6rem; /* Smaller font size for buttons */
+      padding: 5px; /* Adjust button padding */
+  }
+
+  .product-table{
+    margin-right: 60px;
+    margin-left: 80px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 599px){
+  .navSection {
+    height: 60px; /* Reduce height of navbar */
+    padding: 0 15px; /* Adjust padding */
+    font-size: 0.9rem; /* Reduce font size */
+    width: 80%;
+  }
+
+  .authForm{
+    margin-right: 100px;
+  }
+
+  .navSection .company {
+    font-size: 0.7rem; /* Smaller font size for company name */
+  }
+
+  .navSection .userAuth button {
+    font-size: 0.6rem; /* Smaller font size for buttons */
+    padding: 5px; /* Adjust button padding */
+    
+  }
+  .authForm{
+    width: 40%;
+    margin-right: 100px;
+  }
+
+  .sideBarSection{
+    height: 120vh;
+  }
+
+  .productSection{
+    width: 70%; /* Increases width to better utilize the screen space */
+    max-width: none; /* Removes the maximum width restriction */
+    padding: 3px; /* Increases padding for better content spacing */
+    margin-left: 190px;
+    margin-top: 40px;
+  }
+
+  .product-table {
+    width: 100%;
+    border: 2px solid white; /* Keeps the border styling */
+    margin-right: 60px;
+    margin-left: 80px; /* Reduces the right margin */
+    border-collapse: collapse; /* Ensures borders are collapsed */
+    background: #fff; /* Keeps the background color to white */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduces shadow for smaller screens */
+  }
+
+  .product-table thead tr th {
+    font-size: 1.2rem; /* Reduces font size for headers */
+    font-weight: bold; /* Keeps the header text bold */
+    padding: 8px 10px; /* Reduces padding for better fit */
+    background-color: #007BFF; /* Keeps the background color */
+    color: white; /* Keeps the text color */
+    text-align: left; /* Aligns text to the left */
+    border-bottom: 2px solid white; /* Keeps the border style */
+  }
+
+  .product-table tbody tr td {
+    padding: 8px 10px; /* Reduces padding for better fit */
+    border-bottom: 1px solid #ddd; /* Keeps the subtle border between rows */
+  }
+
+  .product-table tbody tr:hover {
+    background-color: #e9e9e9; /* Adjusts hover background color for better contrast */
+  }
+
+  .tableForm, .productForm{
+    margin-right: 50px;
+    
+  }
+
+
+  
+  
+}
+
+@media (max-width: 500px) {
+  .navSection {
+    width: 100%;
+    height: 60px; /* Reduce height of navbar */
+    padding: 0 15px; /* Adjust padding */
+    font-size: 0.9rem; /* Reduce font size */
+  }
+  .productSection{
+    width: 70%; /* Increases width to better utilize the screen space */
+    max-width: none; /* Removes the maximum width restriction */
+    padding: 15px; /* Increases padding for better content spacing */
+    margin-left: 230px;
+    margin-top: 100px;
+  }
+  .navSection .company {
+    font-size: 0.7rem; /* Smaller font size for company name */
+  }
+
+  .navSection .userAuth button {
+    font-size: 0.6rem; /* Smaller font size for buttons */
+    padding: 5px; /* Adjust button padding */
+    
+  }
+
+  .sideBarSection{
+    height: 150vh;
+  }
+
+  .sideBarSection ul{
+    margin-top: 250px;
+  }
+
+  .authForm{
+    width: 60%;
+    margin-right: 50px;
+    margin-top: 150px;
+  }
+
+  .product-table {
+    width: 100%;
+    border: 1px solid white; /* Reduces border thickness for smaller screens */
+    margin: 5px; /* Reduces margin for a more compact layout */
+    margin-left: 50px;
+    border-collapse: collapse; /* Ensures borders are collapsed */
+    background: #fff; /* Keeps the background color white */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Reduces shadow for a smaller screen */
+  }
+
+  .product-table thead tr th {
+    font-size: 1rem; /* Reduces font size for headers */
+    font-weight: bold; /* Keeps the header text bold */
+    padding: 6px 8px; /* Reduces padding for better fit */
+    background-color: #007BFF; /* Keeps the background color */
+    color: white; /* Keeps the text color */
+    text-align: left; /* Aligns text to the left */
+    border-bottom: 1px solid white; /* Adjusts border thickness */
+  }
+
+  .product-table tbody tr td {
+    font-size: 0.9rem; /* Reduces font size for table cells */
+    padding: 6px 8px; /* Reduces padding for better fit */
+    border-bottom: 1px solid #ddd; /* Keeps the subtle border between rows */
+  }
+
+  .product-table tbody tr:hover {
+    background-color: #f5f5f5; /* Adjusts hover background color */
+  }
+
+  .product-table img {
+    width: 40px; /* Reduces image size for small screens */
+    height: 40px; /* Ensures image height matches */
+  }
+  
+}
+
+
+@media (max-width: 350px) {
+  .sideBarSection{
+    height: 200vh;
+  }
+  
+}
+
+
+
+
+
